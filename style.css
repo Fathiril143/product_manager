@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.container.small {
+    max-width: 600px;
+}
+
+.header,
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    flex: 1 1 220px;
+    padding: 20px;
+    border: 1px solid #dbe1ea;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.category {
+    opacity: .7;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px 14px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.secondary {
+    background: #64748b;
+}
+
+.button.danger {
+    background: #dc2626;
+}
+
+.form-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #dbe1ea;
+}
+
+.form-card input {
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.error {
+    margin: 0 0 8px;
+    color: #b91c1c;
+}
+
+.success {
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #dcfce7;
+}
